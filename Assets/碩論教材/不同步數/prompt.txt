@@ -1,0 +1,10 @@
+a octopus squid alpha,Bioluminescent patterns adorn its body, pulsating in intricate designs that serve both as communication signals and a means of mesmerizing prey,offering a diverse mix of lizard, snake, turtle, and crocodile faces. ga,eready, highquality, scary, intricate detailing.game asset,intricate, pbr materials, miniature model, production quality
+
+
+seed 220610224817402
+
+cfg 8
+
+
+真實 參數 human heart, photorealistic
+
