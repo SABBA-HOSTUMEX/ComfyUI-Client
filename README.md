@@ -1,8 +1,7 @@
-# ComfyUI Visualizer
+# ComfyUI Visualizer Client端
 
 <div align="center">
 
-![放專案 Banner 圖]
 
 **AI 生圖過程視覺化工具 - 讓你看見 Stable Diffusion 的內部運作**
 
@@ -10,7 +9,6 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![ComfyUI](https://img.shields.io/badge/ComfyUI-Compatible-green)](https://github.com/comfyanonymous/ComfyUI)
 
-[放展示 GIF]
 
 </div>
 
@@ -32,13 +30,13 @@
 
 ### 1️⃣ Conditioning Matrix 視覺化
 
-追蹤每個 token 在提示詞中的重要性權重
+顯示每個 token 在提示詞中的權重
 
-![放 Conditioning 視覺化截圖]
+<img width="612" height="339" alt="image" src="https://github.com/user-attachments/assets/35ff22f9-7b15-47d7-8ffc-75de70e7a7ab" />
+
 
 - ✅ 顏色梯度表示影響力強弱
-- ✅ 智能分組相同權重的 tokens
-- ✅ 動態箭頭標註系統
+- ✅ 箭頭標註系統
 ```csharp
 // 核心實作：按權重分組 tokens
 groupedTokens = tokenData
@@ -52,23 +50,24 @@ groupedTokens = tokenData
 
 4 通道潛空間即時呈現降噪過程
 
-![放 Latent Space 四通道視覺化截圖]
-
 | 功能 | 說明 |
 |------|------|
 | 📊 多通道顯示 | 同時查看 4 個潛空間通道 |
 | ⏯️ 步驟控制 | 逐步觀看降噪過程 |
 | 🌡️ 熱力圖 | 視覺化特徵分布 |
 
-![放步驟切換的 GIF]
+<img width="411" height="230" alt="image (1)" src="https://github.com/user-attachments/assets/041654b8-a7d4-4a9e-905e-a770b412f42e" /><br>
+
+
+<img width="411" height="230" alt="image (2)" src="https://github.com/user-attachments/assets/adc38149-2516-4cd3-9d56-9f07ea3e7b75" />
 
 ---
 
 ### 3️⃣ VAE Decode 追蹤
 
-記錄 VAE 解碼前後的數據變化
+記錄 VAE 解碼前後的圖像變化
 
-![放 VAE 解碼對比圖]
+<img width="616" height="345" alt="image (3)" src="https://github.com/user-attachments/assets/b76e1fa4-1150-4571-8b27-3b8de9fe7236" />
 
 ---
 
@@ -76,11 +75,8 @@ groupedTokens = tokenData
 
 基於 Photon PUN 2 實現即時同步
 
-![放多人協作介面截圖]
-
-- 🔐 房間碼分享系統
-- 🔄 參數即時同步
-- 👥 團隊協作觀察
+- 🔐 queue 列隊系統，防止用戶超出上限、及穩定使用者體驗品質
+- 🔄 參數即時同步，生成參數傳送後立即進行AI生成任務
 
 ---
 
@@ -189,8 +185,6 @@ git clone https://github.com/yourusername/comfyui-visualizer.git
 
 ### 使用流程
 
-![放使用流程圖]
-
 1. **設定模型** → 選擇 Normal 或 Realistic 風格
 2. **調整參數** → 設定圖像尺寸、steps、CFG 等
 3. **輸入提示詞** → 描述你想生成的圖像
@@ -283,14 +277,6 @@ private void VisualizeUpdate()
 
 ---
 
-## 🎥 展示影片
-
-![放 Demo 影片縮圖]
-
-[▶️ 觀看完整展示影片](https://www.youtube.com/your-video-link)
-
----
-
 ## 🗺️ 未來規劃
 
 - [ ] 支援 ControlNet 視覺化
@@ -299,18 +285,6 @@ private void VisualizeUpdate()
 - [ ] 支援更多 ComfyUI 自定義節點
 - [ ] 加入 LoRA 權重視覺化
 - [ ] 歷史記錄比對功能
-
----
-
-## 🤝 貢獻
-
-歡迎提交 Issue 和 Pull Request！
-
-1. Fork 這個專案
-2. 創建你的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交你的修改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 開啟一個 Pull Request
 
 ---
 
@@ -329,9 +303,7 @@ private void VisualizeUpdate()
 
 ## 📧 聯絡方式
 
-- 📫 Email: your.email@example.com
-- 💼 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- 🌐 Portfolio: [Your Portfolio Website](https://yourwebsite.com)
+- 📫 Email: a664104797@gmail.com
 
 ---
 
@@ -343,8 +315,6 @@ private void VisualizeUpdate()
 
 <div align="center">
 
-**⭐ 如果這個專案對你有幫助，請給個星星！**
-
-Made with ❤️ by [Your Name]
+Made by 胡修銘
 
 </div>
